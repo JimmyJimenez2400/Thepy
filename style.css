@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #16222A;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3A6073, #16222A);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3A6073, #16222A);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  color: white;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-size: clamp(36px, 1.5vw, 60rem);
+  font-weight: 900;
+}
+
+#page-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#page-container>section {
+  flex: 1;
+}
+
+#header-container,
+#main-container,
+#footer-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+#main-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  flex: 1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.navbar .left-side {
+  flex: 1;
+}
+
+.navbar .right-side {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 2;
+}
+
+.logo {
+  flex: 1;
+}
+
+.general-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+  text-align: center;
+}
+
+.general-links>li {
+  flex: 1;
+}
+
+.user-links {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1;
+}
+
+.user-links a {
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.user-links .log-in {
+  background-color: #5CA4A9;
+}
+
+.user-links .sign-up {
+  background-color: #ED6A5A;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  flex: 1;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
